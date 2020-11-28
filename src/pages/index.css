@@ -1,0 +1,11 @@
+img {
+  padding-right: 1rem;
+  width: 100%;
+}
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
