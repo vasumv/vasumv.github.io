@@ -1,5 +1,5 @@
 {
-  "name": "Vasu's Personal Webpage",
+  "name": "vasu-personal-website",
   "private": true,
   "description": "Personal website",
   "version": "0.1.0",
@@ -11,7 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "gatsby": "^2.26.1",
