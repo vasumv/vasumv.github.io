@@ -12,8 +12,7 @@ const ListLink = props => (
 )
 
 export default function Index() {
-  return (
-    <Layout>
+  return ( <Layout>
         <h1> Vasu Vikram </h1>
         <Container>
             <div id="about-img" width="300px">
@@ -35,7 +34,8 @@ export default function Index() {
                   My research interests include automatic test generation,
                   fuzz-testing, and program analysis. I have worked with <Link to="https://rohan.padhye.org">
                   Prof. Rohan Padhye</Link> and <Link to="https://people.eecs.berkeley.edu/~ksen/">Prof. Koushik
-                  Sen</Link>.
+                  Sen</Link>. I am one of the contributors to <Link to="https://github.com/rohanpadhye/jqf">JQF</Link>,
+                  a popular fuzz-testing platform.
                 </p>
             </div>
         </Container>
