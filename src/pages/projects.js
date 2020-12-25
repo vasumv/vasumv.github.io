@@ -16,7 +16,7 @@ export default function Research() {
                   alt="Bonsai Graph" title="Growing a Test Corpus with Bonsai Fuzzing"
                   link="/pdfs/bonsai.pdf"
                   authors="Vasudev Vikram, Rohan Padhye, Koushik Sen"
-                  event="Under review for ICSE 2021">
+                  event="Accepted at ICSE 2021">
                 <p className="project-summary">  This paper presents a coverage-guided grammar based fuzzing technique for automatically generating a corpus
                     of concise test inputs for programs such as compilers. We walk through a case study of a compiler designed for education and
                     the corresponding problem of generating meaningful test cases
