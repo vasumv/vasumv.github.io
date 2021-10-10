@@ -7,7 +7,7 @@ const ListLink = props => (
 )
 export default function Layout({ children }) {
   return (
-    <div style={{ margin: `3rem auto`, maxWidth: 815, padding: `0 1rem` }}>
+    <div style={{ margin: `3rem auto`, maxWidth: 900, padding: `0 1rem` }}>
       <header style={{ marginBottom: `1.5rem`, paddingBottom: `2rem` }}>
         <ul style={{ listStyle: `none`, float: `right` }}>
           <ListLink to="/">Home</ListLink>

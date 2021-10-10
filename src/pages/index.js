@@ -20,22 +20,22 @@ export default function Index() {
             </div>
             <div id="about-text">
                 <p>
-                  Hi! I'm Vasu, a full time employee working at Cruise Automation on the Vision team. I recently
-                  finished my undergraduate degree in Electrical Engineering and Computer Science
+                  Hi! I'm Vasu, a software engineering PhD student in the <Link to="https://www.isri.cmu.edu/"> Institute of Software Research </Link> at Carnegie Mellon University!
+                  I finished my undergraduate degree in Electrical Engineering and Computer Science
                   from U.C. Berkeley.
-                </p>
-                <br/>
-                <p>
-                  I've spent summers interning at <Link to="https://www.getcruise.com/">Cruise</Link>, where I have worked on projects improving emergency vehicles
-                  traffic light detection.
                 </p>
                 <br/>
                 <p>
                   My research interests include automatic test generation,
                   fuzz-testing, and program analysis. I have worked with <Link to="https://rohan.padhye.org">
                   Prof. Rohan Padhye</Link> and <Link to="https://people.eecs.berkeley.edu/~ksen/">Prof. Koushik
-                  Sen</Link>. I am one of the contributors to <Link to="https://github.com/rohanpadhye/jqf">JQF</Link>,
-                  a popular fuzz-testing platform.
+                  Sen</Link>, and am one of the contributors to <Link to="https://github.com/rohanpadhye/jqf">JQF</Link>,
+                  a popular fuzz-testing platform. I am currently a part of the <Link to="https://cmu-pasta.github.io/"> PASTA Lab </Link>.
+                </p>
+                <br/>
+                <p>
+                  I've also spent time interning and working at <Link to="https://www.getcruise.com/">Cruise</Link>, where I have worked on projects improving emergency vehicle and
+                  traffic light detection.
                 </p>
             </div>
         </Container>

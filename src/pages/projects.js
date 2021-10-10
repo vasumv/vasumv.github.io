@@ -14,7 +14,7 @@ export default function Research() {
         <ul style={{ listStyle: `none`, float: `left`, display: `block` }}>
           <ProjectItem img={bonsaiImg}
                   alt="Bonsai Graph" title="Growing a Test Corpus with Bonsai Fuzzing"
-                  link="/pdfs/bonsai.pdf"
+                  link="/pdfs/bonsai-icse21.pdf"
                   authors="Vasudev Vikram, Rohan Padhye, Koushik Sen"
                   event="Accepted at ICSE 2021">
                 <p className="project-summary">  This paper presents a coverage-guided grammar based fuzzing technique for automatically generating a corpus
