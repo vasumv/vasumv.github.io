@@ -20,7 +20,7 @@ export default function Index() {
             </div>
             <div id="about-text">
                 <p>
-                  Hi! I'm Vasu, a software engineering PhD student in the <Link to="https://www.isri.cmu.edu/"> Institute of Software Research </Link> at Carnegie Mellon University!
+                  Hi! I'm Vasu, a software engineering PhD student in the <Link to="https://www.isri.cmu.edu/"> Institute for Software Research </Link> at Carnegie Mellon University.
                   I finished my undergraduate degree in Electrical Engineering and Computer Science
                   from U.C. Berkeley.
                 </p>
