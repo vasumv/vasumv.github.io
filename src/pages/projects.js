@@ -4,6 +4,7 @@ import "./projects.css"
 
 import ProjectItem from "../components/project-item"
 import bonsaiImg from "../../images/bonsai_graph.png"
+import mu2Img from "../../images/mu2.png"
 import picassoImg from "../../images/picassoImg.png"
 
 export default function Research() {
@@ -12,11 +13,24 @@ export default function Research() {
       <h2>Projects</h2>
       <div id="project-container">
         <ul style={{ listStyle: `none`, float: `left`, display: `block` }}>
+          <ProjectItem img={mu2Img}
+                  alt="Mu2" title="Guiding Greybox Fuzzing with Mutation Testing"
+                  link="/pdfs/mu2-issta23.pdf"
+                  authors="Vasudev Vikram, Isabella Laybourn, Ao Li, Nicole Nair, Kelton OBrien, Rafaello Sanna, Rohan Padhye"
+                  event="ISSTA 2023">
+                <p className="project-summary">
+                  In this paper, we develop and evaluate Mu2, a Java-based framework for incorporating mutation analysis in the greybox fuzzing loop, with the goal of producing a test-input corpus with a high mutation score.
+                  Mu2 makes use of a differential oracle for identifying inputs that exercise interesting program behavior without causing crashes.
+                  This paper describes several dynamic optimizations implemented in Mu2 to overcome the high cost of performing mutation analysis with every fuzzer-generated input.
+                  These optimizations introduce trade-offs in fuzzing throughput and mutation killing ability, which we evaluate empirically on five real-world Java benchmarks.
+                  Overall, variants of Mu2 are able to synthesize test-input corpora with a higher mutation score than state-of-the-art Java fuzzer Zest.
+              </p>
+          </ProjectItem>
           <ProjectItem img={bonsaiImg}
                   alt="Bonsai Graph" title="Growing a Test Corpus with Bonsai Fuzzing"
                   link="/pdfs/bonsai-icse21.pdf"
                   authors="Vasudev Vikram, Rohan Padhye, Koushik Sen"
-                  event="Accepted at ICSE 2021">
+                  event="ICSE 2021">
                 <p className="project-summary">  This paper presents a coverage-guided grammar based fuzzing technique for automatically generating a corpus
                     of concise test inputs for programs such as compilers. We walk through a case study of a compiler designed for education and
                     the corresponding problem of generating meaningful test cases
