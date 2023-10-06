@@ -1,9 +1,7 @@
 img.project {
     display: block;
-    max-width:250px;
-    max-height:260px;
-    width: auto;
-    height: auto;
+    width:180px;
+    max-height:155px;
     padding-right: 1rem;
 }
 .authors
