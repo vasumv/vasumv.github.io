@@ -23,7 +23,7 @@ export default function Research() {
                   authors="Ao Li, Byeongjee Kang, Vasudev Vikram, Isabella Laybourn, Samvid Dharanikota, Shrey Tiwari, Rohan Padhye"
                   event="Under review">
                 <p className="project-summary">
-	  This paper presents Fray, a platform for performing push-button concurrency testing of arbitrary JVM programs. Fray’s novel concurrency control mechanism called shadow locking identifies a sweet spot on the abstraction trade-off curve, enabling it to optimize the search space, achieve high performance, and maximize general-purpose applicability.
+	  This paper presents Fray, a platform for performing push-button concurrency testing of arbitrary JVM programs. Fray’s novel concurrency control mechanism called shadow locking identifies a sweet spot on the abstraction trade-off curve, enabling it to optimize the search space, achieve high performance, and maximize general-purpose applicability. In mature open source projects, Fray successfully discovered 11 real-world concurrency bugs that can cause 168 tests to fail reproducibly.
 		  </p>
           </ProjectItem>
           <ProjectItem img={havocImg}
