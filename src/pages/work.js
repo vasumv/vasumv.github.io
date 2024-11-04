@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import WorkItem from "../components/work-item"
 import headshot from "../../images/me.png"
+import awsLogo from "../../images/aws.jpg"
 import cruiseLogo from "../../images/cruise.png"
 import cubicLogo from "../../images/cubic.jpeg"
 import "./work.css"
@@ -12,11 +13,26 @@ export default function Work() {
       <h2>Work</h2>
       <div id="work-container">
         <ul style={{ listStyle: `none`, float: `left`, display: `block` }}>
+          <WorkItem img={awsLogo}
+                  alt="AWS Logo" company="Amazon Web Services" position="Applied Science Intern"
+                  time="May 2024 - August 2024 - Arlington, VA">
+                <p> - Worked on the Permissions Science team to evaluate and improve automated testing for Cedar, a domain-specific langauge for writing authorization policies 
+                </p>
+                <p> - Evaluated and improved fuzz-testing input generators written in Rust to be more efficient and diverse at testing Cedar properties on the parser, validator, and authorizer.
+                </p>
+	  	<p> - Found unique result of purely random generation to be stronger than coverage-guided fuzzing, ongoing
+	  work to publish results.
+	  	</p>
+          </WorkItem>
           <WorkItem img={cruiseLogo}
                   alt="Cruise Logo" company="Cruise" position="Software Engineer"
                   time="August 2020 - September 2021 - San Francisco, CA">
                 <p> - Worked on Understanding team to improve traffic lights and emergency vehicle detection
                 </p>
+	  	<p> - Built tools for traffic lights evaluation framework and improving triaging process
+	  	</p>
+	  	<p> - Trained and deployed new flashing emergency vehicle detector for the Scene Understanding team
+	  	</p>
           </WorkItem>
           <WorkItem img={cruiseLogo}
                   alt="Cruise Logo" company="Cruise (intern)" position="Computer Vision Software Engineering Intern"

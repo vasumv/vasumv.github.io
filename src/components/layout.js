@@ -12,7 +12,7 @@ export default function Layout({ children }) {
         <ul style={{ listStyle: `none`, float: `right` }}>
           <ListLink to="/">Home</ListLink>
           <ListLink to="/work/">Work</ListLink>
-          <ListLink to="/projects/">Projects</ListLink>
+          <ListLink to="/projects/">Publications</ListLink>
         </ul>
       </header>
       {children}

@@ -4,27 +4,35 @@ import Layout from "../components/layout"
 import "./projects.css"
 
 import ProjectItem from "../components/project-item"
-import bonsaiImg from "../../images/bonsai_graph.png"
+import bonsaiImg from "../../images/bonsai.png"
 import mu2Img from "../../images/mu2.png"
 import unpinImg from "../../images/unpin.png"
 import proptestAiImg from "../../images/proptestai.png"
+import frayImg from "../../images/fray.png"
+import havocImg from "../../images/havoc.png"
 import picassoImg from "../../images/picassoImg.png"
 
 export default function Research() {
   return (
     <Layout>
-      <h2>Projects</h2>
+      <h2>Publications</h2>
       <div id="project-container">
         <ul style={{ listStyle: `none`, float: `left`, display: `block` }}>
-          <ProjectItem img={unpinImg}
-                  alt="Pinning is Sinning" title="Pinning is Sinning: Towards Upgrading Maven Dependencies"
-                  link="/pdfs/unpin.pdf"
-                  authors="Vasudev Vikram, Yuvraj Agarwal, Rohan Padhye"
-                  event="Preprint">
+          <ProjectItem img={frayImg}
+                  alt="Fray" title="Fray: An Efficient General-Purpose Concurrency Testing Platform for the JVM"
+                  authors="Ao Li, Byeongjee Kang, Vasudev Vikram, Isabella Laybourn, Samvid Dharanikota, Shrey Tiwari, Rohan Padhye"
+                  event="Under review">
                 <p className="project-summary">
-In this paper, we look to understand the frequency and consequences of dependency pinning. We conduct an empirical study to show that over 60% of consumers of popular Maven libraries pin their dependencies to outdated versions, some over a year old.
-Furthermore, these pinned versions often miss out on security fixes; we find that upgrading dependencies to the latest minor or patch version is 3.45x as likely to reduce security vulnerabilities rather than introduce new ones.
-We propose Unpin, a novel tool that computes a confidence score for a dependency upgrade by leveraging crowdsourced tests of peer projects and simulating the upgrade for them. Our evaluation on real-world pins to the top 500 popular libraries in Maven shows that Unpin (with a minimum confidence score of 5) can provide confidence to over 3,000 consumers to safely perform an upgrade that reduces security vulnerabilities.
+	  This paper presents Fray, a platform for performing push-button concurrency testing of arbitrary JVM programs. Fray’s novel concurrency control mechanism called shadow locking identifies a sweet spot on the abstraction trade-off curve, enabling it to optimize the search space, achieve high performance, and maximize general-purpose applicability.
+		  </p>
+          </ProjectItem>
+          <ProjectItem img={havocImg}
+                  alt="Havoc Effect" title="The Havoc Paradox in Generator-Based Fuzzing"
+                  link="/pdfs/havoc.pdf"
+                  authors="Ao Li, Madonna Huang, Vasudev Vikram, Caroline Lemieux, Rohan Padhye"
+                  event="Under review">
+                <p className="project-summary">
+	  Parametric generators are a simple way to combine coverage-guided and generator-based fuzzing. However, this technique is prone to the havoc effect, where small mutations on the parametric byte sequence cause large, destructive mutations to the structured input. This registered report first provides a preliminary investigation of the paradoxical nature of the havoc effect for generator-based fuzzing in Java. In particular, we measure mutation characteristics and confirm the existence of the havoc effect, as well as scenarios where it may be more detrimental. The proposed evaluation extends this investigation over more benchmarks, with the tools Zest, JQF’s EI, BeDivFuzz, and Zeugma.
               </p>
           </ProjectItem>
           <ProjectItem img={proptestAiImg}
@@ -37,6 +45,17 @@ We propose Unpin, a novel tool that computes a confidence score for a dependency
                    Pain points in writing property-based tests include implementing diverse random input generators and thinking of meaningful properties to test. Developers, however, are more amenable to writing documentation; plenty of library API documentation is available and can be used as natural language specifications for property-based tests.
                    As large language models (LLMs) have recently shown promise in a variety of coding tasks, we explore the potential of using LLMs to synthesize property-based tests. We call our approach Proptest AI, and propose three different strategies of prompting the LLM for PBT. We characterize various failure modes of
                    Proptest AI and detail an evaluation methodology for automatically synthesized property-based tests. A prototype of our website can be found <Link to="https://proptest.ai">here</Link>.
+              </p>
+          </ProjectItem>
+          <ProjectItem img={unpinImg}
+                  alt="Pinning is Sinning" title="Pinning is Sinning: Towards Upgrading Maven Dependencies"
+                  link="/pdfs/unpin.pdf"
+                  authors="Vasudev Vikram, Yuvraj Agarwal, Rohan Padhye"
+                  event="Preprint">
+                <p className="project-summary">
+In this paper, we look to understand the frequency and consequences of dependency pinning. We conduct an empirical study to show that over 60% of consumers of popular Maven libraries pin their dependencies to outdated versions, some over a year old.
+Furthermore, these pinned versions often miss out on security fixes; we find that upgrading dependencies to the latest minor or patch version is 3.45x as likely to reduce security vulnerabilities rather than introduce new ones.
+We propose Unpin, a novel tool that computes a confidence score for a dependency upgrade by leveraging crowdsourced tests of peer projects and simulating the upgrade for them. Our evaluation on real-world pins to the top 500 popular libraries in Maven shows that Unpin (with a minimum confidence score of 5) can provide confidence to over 3,000 consumers to safely perform an upgrade that reduces security vulnerabilities.
               </p>
           </ProjectItem>
           <ProjectItem img={mu2Img}
@@ -66,30 +85,6 @@ We propose Unpin, a novel tool that computes a confidence score for a dependency
                     a form of iterative deepening. We call this approach bonsai
                     fuzzing.
               </p>
-          </ProjectItem>
-          <ProjectItem img={picassoImg}
-                  alt="Take a Picasso Image" title="Take a Picasso"
-                  link="https://devpost.com/software/take-a-picasso-6omuk1"
-                  event="Cal Hacks 3.0">
-                <p className="project-summary">
-                    When the user enters the booth, all they have to say is “Take a Pic!” and our iOS app, using speech recognition,
-                    is triggered and takes a picture. From there, we used OpenCV with Python for computer vision to blur the image,
-                    find the edges of the photo, and extract the major features of the portrait to make the image look like a sketch.
-                    The picture is then vectorized to be drawn into one continuous path of many small line segments.
-                    These lines are then sent to the arduino behind the easel, which moves the motors accordingly to draw the picture!
-                </p>
-          </ProjectItem>
-          <ProjectItem img="https://play.pokemonshowdown.com/favicon.ico"
-                  alt="Pokemon Showdown Bot Image" title="Pokemon Showdown AI"
-                  link="https://github.com/vasumv/pokemon_ai"
-                  event="Greater San Diego Science and Engineering Fair (2015)">
-                <p className="project-summary">
-This project displayed an application of machine
-learning to the minimax algorithm in the setting of an online Pokemon game, which has
-hidden information. It focused on the problem of predicting the set of possible actions
-an opponent might have. Relevant Pokemon game data was obtained and the minimax
-algorithm was implemented to return the best action given a Pokemon game state.
-    </p>
           </ProjectItem>
         </ul>
       </div>
