@@ -1,0 +1,10 @@
+# Block access to all PDF files
+User-agent: *
+Disallow: /pdfs/
+
+# Allow access to everything else
+User-agent: *
+Allow: /
+
+# Sitemap location (adjust the URL to match your site)
+Sitemap: https://vasumv.github.io/
