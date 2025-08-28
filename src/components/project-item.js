@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 export default function ProjectItem(props) {
   const formatAuthors = (authors) => {
     return authors.split(', ').map((author, index) => {
-      if (author.trim() === "Vasudev Vikram") {
+      if (author.trim() === "Vasudev Vikram" || author.trim() === "Vasudev Vikram*") {
         return <strong key={index}>{author}</strong>;
       }
       return author;
@@ -18,7 +18,7 @@ export default function ProjectItem(props) {
   } else {
     titleElem = <Link to={props.link}> {props.title} </Link>;
   }
-  
+
   return (
     <li className={projectItemStyles.projectitem}>
       <img className="project" src={props.img} alt={props.alt}/>

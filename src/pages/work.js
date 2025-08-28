@@ -15,8 +15,14 @@ export default function Work() {
         <ul style={{ listStyle: `none`, float: `left`, display: `block` }}>
           <WorkItem img={awsLogo}
                   alt="AWS Logo" company="Amazon Web Services" position="Applied Science Intern"
+                  time="May 2025 - August 2025 - Santa Clara, CA">
+                <p> - Worked on the Agentic AI Automated Reasoning team to design and implement an LLM-based code optimization tool for Java codebases.
+                </p>
+          </WorkItem>
+          <WorkItem img={awsLogo}
+                  alt="AWS Logo" company="Amazon Web Services" position="Applied Science Intern"
                   time="May 2024 - August 2024 - Arlington, VA">
-                <p> - Worked on the Permissions Science team to evaluate and improve automated testing for Cedar, a domain-specific langauge for writing authorization policies 
+                <p> - Worked on the Permissions Science team to evaluate and improve automated testing for Cedar, a domain-specific langauge for writing authorization policies
                 </p>
                 <p> - Evaluated and improved fuzz-testing input generators written in Rust to be more efficient and diverse at testing Cedar properties on the parser, validator, and authorizer.
                 </p>

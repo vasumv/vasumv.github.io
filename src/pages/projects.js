@@ -20,19 +20,27 @@ export default function Research() {
         <ul style={{ listStyle: `none`, float: `left`, display: `block` }}>
           <ProjectItem img={frayImg}
                   alt="Fray" title="Fray: An Efficient General-Purpose Concurrency Testing Platform for the JVM"
+                  link="/pdfs/fray.pdf"
                   authors="Ao Li, Byeongjee Kang, Vasudev Vikram, Isabella Laybourn, Samvid Dharanikota, Shrey Tiwari, Rohan Padhye"
-                  event="Under review">
+                  event="Accepted at OOPSLA 2025">
                 <p className="project-summary">
-	  This paper presents Fray, a platform for performing push-button concurrency testing of arbitrary JVM programs. Fray’s novel concurrency control mechanism called shadow locking identifies a sweet spot on the abstraction trade-off curve, enabling it to optimize the search space, achieve high performance, and maximize general-purpose applicability. In mature open source projects, Fray successfully discovered 11 real-world concurrency bugs that can cause 168 tests to fail reproducibly.
+Concurrency bugs are hard to discover and reproduce, even in well-synchronized programs that are free of data races.
+In this paper, we take a first-principles approach for elucidating the requirements and design space to enable CCT on arbitrary real-world JVM applications.
+
+Based on these insights, we present Fray, a new platform for performing push-button concurrency testing beyond data races of JVM programs. The key design principle behind Fray is to orchestrate thread interleavings without replacing existing concurrency primitives, using a concurrency control mechanism called shadow locking for faithfully expressing the set of all possible program behaviors.
+We believe that Fray serves as a bridge between classical academic research and industrial practice--- empowering developers with advanced concurrency testing algorithms that demonstrably uncover more bugs, while simultaneously providing researchers a platform for large-scale evaluation of search techniques.'
 		  </p>
           </ProjectItem>
           <ProjectItem img={havocImg}
                   alt="Havoc Effect" title="The Havoc Paradox in Generator-Based Fuzzing"
                   link="/pdfs/havoc.pdf"
-                  authors="Ao Li, Madonna Huang, Vasudev Vikram, Caroline Lemieux, Rohan Padhye"
-                  event="Under review">
+                  authors="Ao Li*, Madonna Huang*, Vasudev Vikram*, Caroline Lemieux, Rohan Padhye"
+                  event="ACM Transactions on Software Engineering and Methodology (2025)">
                 <p className="project-summary">
-	  Parametric generators are a simple way to combine coverage-guided and generator-based fuzzing. However, this technique is prone to the havoc effect, where small mutations on the parametric byte sequence cause large, destructive mutations to the structured input. This registered report first provides a preliminary investigation of the paradoxical nature of the havoc effect for generator-based fuzzing in Java. In particular, we measure mutation characteristics and confirm the existence of the havoc effect, as well as scenarios where it may be more detrimental. The proposed evaluation extends this investigation over more benchmarks, with the tools Zest, JQF’s EI, BeDivFuzz, and Zeugma.
+Parametric generators combine coverage-guided and generator-based fuzzing for testing programs
+requiring structured inputs. They function as decoders that transform arbitrary byte sequences into structured inputs, allowing mutations on byte sequences to map directly to mutations on structured inputs, without requiring specialized mutators.
+However, this technique is prone to the havoc effect, where small mutations on the byte sequence cause large, destructive mutations to the structured input.
+This paper investigates the paradoxical nature of the havoc effect for generator-based fuzzing in Java. In particular, we measure mutation characteristics and confirm the existence of the havoc effect, as well as scenarios where it may be more detrimental.
               </p>
           </ProjectItem>
           <ProjectItem img={proptestAiImg}
